@@ -1,0 +1,55 @@
+:root {
+  --main-dark-purple: #440044;
+  --main-pancake: #eed699;
+  --main-bubblegum: #ffc1cc;
+}
+
+body{
+font-family: 'Roboto', sans-serif;
+background-color: var(--main-bubblegum);
+
+}
+
+.display-4{
+  font-family: 'Itim', cursive;
+  color: var(--main-dark-purple);
+}
+
+
+.col-sm-3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 2px;
+  border-radius:  30px;
+  background-color:lavender;
+  text-align: center;
+  font-family: 'Itim', cursive;
+  color: var(--main-dark-purple);
+}
+
+.col-img{
+
+}
+
+.col-sm-6 {
+  visibility: hidden;
+
+}
+
+.row {
+  padding: 5px;
+  margin: 5px;
+
+}
+
+.jumbotron-fluid{
+  text-align: center;
+  color: var(--main-dark-purple);
+  border-bottom: 2px solid var(--main-dark-purple);
+  background-image: linear-gradient(90deg, #ffc1cc, white, #ffc1cc);
+
+}
+
+.my-4{
+  border: 4px dotted;
+}
