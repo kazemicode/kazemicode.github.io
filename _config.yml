@@ -1,0 +1,9 @@
+title: kazemi.dev
+description: kazemi.dev
+url: "https://kazemi.dev"
+baseurl: ""  # No trailing slash
+remote_theme: mmistakes/minimal-mistakes
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
