@@ -8,3 +8,10 @@ plugins:
   - jekyll-remote-theme
   - jekyll-feed
   - jekyll-include-cache  
+
+header_pages:
+  - index.md
+  - about.md
+
+style: dark # dark (default), light or hacker
+listen_for_clients_preferred_style: true # false (default) or true
