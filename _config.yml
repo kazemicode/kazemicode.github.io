@@ -2,7 +2,7 @@ title: kazemi.dev
 description: kazemi.dev
 url: "https://kazemi.dev"
 baseurl: ""  # No trailing slash
-remote_theme: mmistakes/minimal-mistakes
+remote_theme: b2a3e8/jekyll-theme-console
 
 plugins:
   - jekyll-remote-theme
