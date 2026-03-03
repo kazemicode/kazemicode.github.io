@@ -69,3 +69,14 @@ code, pre {
   border: 1px solid $terminal-green;
   color: $terminal-green !important;
 }
+
+.cursor {
+  display: inline-block;
+  width: 10px;
+  background-color: $terminal-green;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
