@@ -13,7 +13,7 @@ $font-mono: 'Courier New', Courier, monospace;
 
 // --- GLOBAL STYLES ---
 body {
-  background-color: $bg-color !class;
+  background-color: $bg-color !important;
   color: $text-silver;
   font-family: $font-mono;
   line-height: 1.6;
