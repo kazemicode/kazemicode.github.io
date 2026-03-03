@@ -1,0 +1,71 @@
+---
+# Front matter tells Jekyll to process this file
+---
+
+@import "minima";
+
+// --- Y2K THEME VARIABLES ---
+$bg-color: #050505;
+$terminal-green: #00ff41;
+$cyber-purple: #bc13fe;
+$text-silver: #e0e0e0;
+$font-mono: 'Courier New', Courier, monospace;
+
+// --- GLOBAL STYLES ---
+body {
+  background-color: $bg-color !class;
+  color: $text-silver;
+  font-family: $font-mono;
+  line-height: 1.6;
+  text-shadow: 0 0 2px rgba(0, 255, 65, 0.3);
+}
+
+// --- SCANLINE EFFECT ---
+body::before {
+  content: " ";
+  display: block;
+  position: fixed;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 0, 0, 0.1) 50%
+  ), linear-gradient(
+    90deg, 
+    rgba(255, 0, 0, 0.03), 
+    rgba(0, 255, 0, 0.01), 
+    rgba(0, 0, 255, 0.03)
+  );
+  z-index: 9999;
+  background-size: 100% 4px, 3px 100%;
+  pointer-events: none;
+}
+
+// --- CURRICULUM LINKS & ACCENTS ---
+a {
+  color: $terminal-green;
+  text-decoration: none;
+  border-bottom: 1px dashed $terminal-green;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: $bg-color;
+    background-color: $terminal-green;
+    box-shadow: 0 0 10px $terminal-green;
+  }
+}
+
+// --- HEADERS (The "Glitch" Vibe) ---
+h1, h2, h3 {
+  color: $cyber-purple;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-left: 5px solid $cyber-purple;
+  padding-left: 15px;
+}
+
+// --- CODE BLOCKS (Crucial for Curriculum Devs) ---
+code, pre {
+  background-color: #1a1a1a !important;
+  border: 1px solid $terminal-green;
+  color: $terminal-green !important;
+}
